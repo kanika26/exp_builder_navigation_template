@@ -1,0 +1,126 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <div class="demo-only" style="height:12rem">
+        <div class="slds-tabs_default">
+          <ul class="slds-tabs_default__nav" role="tablist">
+            <li class="slds-tabs_default__item" title="Item One" role="presentation">
+                <a class="slds-tabs_default__link" href="#" role="tab" tabindex="-1" aria-selected="true" aria-controls="tab-default-1" id="tab-default-1__item"> <img src={logo} style="height: 250px; width:150px;"/>{Item0}</a>
+             
+              </li>
+            <li class="slds-tabs_default__item" title="Item Two" role="presentation">
+              <a class="slds-tabs_default__link" href="#" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-default-2" id="tab-default-2__item" onmouseover={handleclick1} name = "list1" style="color: #61a534; font-size: 1.6rem; font-family:Oxfam TSTAR PRO bold; margin: left 30px;">{Item1}</a>
+            </li>
+            <li class="slds-tabs_default__item" title="Item Three" role="presentation">
+              <a class="slds-tabs_default__link" label={clickedLabel} href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-3" id="tab-default-3__item" name="list2" onmouseover={handleclick2} style="color: #61a534; font-size: 1.6rem; font-family:Oxfam TSTAR PRO bold;">{Item2}</a>
+            </li>
+            <li class="slds-tabs_default__item" title="Item Four" role="presentation">
+              <a class="slds-tabs_default__link" href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-4" id="tab-default-4__item" name = "list3" onmouseover={handleclick3} style="color: #61a534; font-size: 1.6rem; font-family:Oxfam TSTAR PRO bold;">{Item3}</a>
+            </li>
+            <li class="slds-tabs_default__item" title="Item Five" role="presentation">
+              <a class="slds-tabs_default__link" href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-5" id="tab-default-5__item" name = "list4" onmouseover={handleclick4} style="color: #61a534; font-size: 1.6rem; font-family:Oxfam TSTAR PRO bold;">{Item4}</a>
+            </li>
+            <li class="slds-tabs_default__item" title="Item Six" role="presentation">
+              <a class="slds-tabs_default__link" href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-6" id="tab-default-6__item" name = "list5" onmouseover={handleclick5} style="color: #61a534; font-size: 1.6rem; font-family:Oxfam TSTAR PRO bold;">{Item5}</a>
+            </li>
+           
+          </ul>
+          <div if:true = {boolVisible1} id="tab-default-2" class="slds-tabs_default__content" role="tabpanel" aria-labelledby="tab-default-2__item">
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                  <span><img style = "height:150px; width:150px;" src={image1} /></span>
+                </div>
+                <div class="slds-col">
+                 <p><a href="#" style="color: black;">{SubItem1}</a></p>
+                 <p><a href="#" style="color: black;">{SubItem2}</a></p>
+                 <p><a href="#" style="color: black;">{SubItem3}</a></p>
+                 <p><a href="#" style="color: black;">{SubItem4}</a></p>
+                </div>
+                <div class="slds-col">
+                    <p><a href="#" style="color: black;">{SubItem5}</a></p>
+                    <p><a href="#" style="color: black;">{SubItem6}</a></p>
+                    <p><a href="#" style="color: black;">{SubItem7}</a></p>
+                    <p><a href="#" style="color: black;">{SubItem8}</a></p>
+                </div>
+              </div>
+          </div>
+        
+
+          <div if:true = {boolVisible2} id="tab-default-3" class="slds-tabs_default__content" role="tabpanel" aria-labelledby="tab-default-3__item">
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                  <span>2</span>
+                </div>
+                <div class="slds-col">
+                 <p><a href="#" style="color: black;">{SubItem1}</a></p>
+                 <p><a href="#" style="color: black;">{SubItem2}</a></p>
+                 <p><a href="#" style="color: black;">{SubItem3}</a></p>
+                 <p><a href="#" style="color: black;">{SubItem4}</a></p>
+                </div>
+                <div class="slds-col">
+                    <p><a href="#" style="color: black;">{SubItem5}</a></p>
+                    <p><a href="#" style="color: black;">{SubItem6}</a></p>
+                    <p><a href="#" style="color: black;">{SubItem7}</a></p>
+                    <p><a href="#" style="color: black;">{SubItem8}</a></p>
+                </div>
+              </div>
+          </div>
+          <div if:true = {boolVisible3} id="tab-default-4" class="slds-tabs_default__content" role="tabpanel" aria-labelledby="tab-default-4__item">
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                  <span>3</span>
+                </div>
+                <div class="slds-col">
+                 <p><a href="#" style="color: black;">{SubItem1}</a></p>
+                 <p><a href="#" style="color: black;">{SubItem2}</a></p>
+                 <p><a href="#" style="color: black;">{SubItem3}</a></p>
+                 <p><a href="#" style="color: black;">{SubItem4}</a></p>
+                </div>
+                <div class="slds-col">
+                    <p><a href="#" style="color: black;">{SubItem5}</a></p>
+                    <p><a href="#" style="color: black;">{SubItem6}</a></p>
+                    <p><a href="#" style="color: black;">{SubItem7}</a></p>
+                    <p><a href="#" style="color: black;">{SubItem8}</a></p>
+                </div>
+              </div>
+          </div>
+          <div if:true = {boolVisible4} id="tab-default-5" class="slds-tabs_default__content" role="tabpanel" aria-labelledby="tab-default-5__item">
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                  <span>4</span>
+                </div>
+                <div class="slds-col">
+                 <p><a href="#" style="color: black;">{SubItem1}</a></p>
+                 <p><a href="#" style="color: black;">{SubItem2}</a></p>
+                 <p><a href="#" style="color: black;">{SubItem3}</a></p>
+                 <p><a href="#" style="color: black;">{SubItem4}</a></p>
+                </div>
+                <div class="slds-col">
+                    <p><a href="#" style="color: black;">{SubItem5}</a></p>
+                    <p><a href="#" style="color: black;">{SubItem6}</a></p>
+                    <p><a href="#" style="color: black;">{SubItem7}</a></p>
+                    <p><a href="#" style="color: black;">{SubItem8}</a></p>
+                </div>
+              </div>
+          </div>
+          <div if:true = {boolVisible5} id="tab-default-6" class="slds-tabs_default__content" role="tabpanel" aria-labelledby="tab-default-6__item">
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                  <span>5</span>
+                </div>
+                <div class="slds-col">
+                 <p><a href="#" style="color: black;">{SubItem1}</a></p>
+                 <p><a href="#" style="color: black;">{SubItem2}</a></p>
+                 <p><a href="#" style="color: black;">{SubItem3}</a></p>
+                 <p><a href="#" style="color: black;">{SubItem4}</a></p>
+                </div>
+                <div class="slds-col">
+                    <p><a href="#" style="color: black;">{SubItem5}</a></p>
+                    <p><a href="#" style="color: black;">{SubItem6}</a></p>
+                    <p><a href="#" style="color: black;">{SubItem7}</a></p>
+                    <p><a href="#" style="color: black;">{SubItem8}</a></p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+</template>

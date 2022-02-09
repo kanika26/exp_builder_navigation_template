@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name = "Item0" type="String" default="Logo"/>
+            <property name="Item1" type="String" default = "Who we are" />
+            <property name="Item2" type="String" default = "What we do" />
+            <property name="Item3" type="String" default = "Resources" />
+            <property name="Item4" type="String" default = "Actions" />
+            <property name="Item5" type="String" default = "News and Stories" />
+            <property name="clickedLabel" type="String" default = "" />
+            <property name = "SubItem1" type = "String" default = "Our Story"></property>
+            <property name = "SubItem2" type = "String" default = ""></property>
+            <property name = "SubItem3" type = "String" default = ""></property>
+            <property name = "SubItem4" type = "String" default = ""></property>
+            <property name = "SubItem5" type = "String" default = ""></property>
+            <property name = "SubItem6" type = "String" default = ""></property>
+            <property name = "SubItem7" type = "String" default = ""></property>
+            <property name = "SubItem8" type = "String" default = ""></property>
+
+           <property name="logo" type="String" default="https://media.glassdoor.com/sqll/3146301/advance-solutions-squareLogo-1623254630416.png" />
+           <property name="image1" type="String" default="https://media.glassdoor.com/sqll/2299992/codefront-technologies-squarelogo-1630063711833.png"/>
+        </targetConfig>
+    </targetConfigs>
+   
+</LightningComponentBundle>
